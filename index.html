@@ -20,19 +20,17 @@
             max-width: 800px;
             margin: 20px auto;
         }
-        /* Скрываем боковые кнопки плеера */
-        #kinoplayertop iframe {
-            pointer-events: none;
-        }
-        /* Скрываем кнопку с текстом "Вернуться на главную" */
-        a:contains("Вернуться на главную") {
-            display: none;
-        }
     </style>
 </head>
 <body>
     <h1>Фильм: Дюна: Часть вторая</h1>
-    <div id="kinoplayertop" data-title="Дюна: Часть вторая (Dune: Part Two) 2024"></div>
+    <!-- Параметры для настройки плеера -->
+    <div id="kinoplayertop" 
+         data-title="Дюна: Часть вторая (Dune: Part Two) 2024" 
+         data-player="iframe,bazon" 
+         data-player-active="bazon"
+         data-shearch="false" 
+         data-show-errors="false"></div>
     <script src="https://kinoplayer.top/top.js"></script>
 </body>
 </html>
