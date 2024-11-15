@@ -20,25 +20,16 @@
             max-width: 800px;
             margin: 20px auto;
         }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            text-decoration: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        a:hover {
-            background-color: #0056b3;
+        /* Скрываем боковые кнопки плеера */
+        #kinoplayertop iframe {
+            pointer-events: none;
         }
     </style>
 </head>
 <body>
     <h1>Фильм: Дюна: Часть вторая</h1>
-    <div id="kinoplayertop" data-title="Дюна: Часть вторая (Dune: Part Two) 2024"></div>
+    <!-- Параметры для выбора качества и плеера -->
+    <div id="kinoplayertop" data-title="Дюна: Часть вторая (Dune: Part Two) 2024" data-player="max_quality"></div>
     <script src="https://kinoplayer.top/top.js"></script>
-    <a href="/">Вернуться на главную</a>
 </body>
 </html>
